@@ -1,0 +1,42 @@
+<h1> {{name}}</h1>
+
+<!-- d1 significa definition list-->
+<dl>
+  <!-- td = table description-->
+  <td>Nombre:</td>
+
+  <!-- dd = description-->
+  <dd> {{ name }} </dd>
+
+  <td>Edad:</td>
+  <dd>{{ age }}</dd>
+
+  <td>Metodo:</td>
+  <dd> {{getHeroDescription()}} </dd> <!-- debo ponerle () debido a que es un metodo -->
+
+  <td>Capitalizado:</td>
+  <dd>{{capitalizedName}}</dd>
+</dl>
+ <!-- nfif si esta en falso lo va a sacar del html. no se vera digamos-->
+<button
+*ngIf="name !== 'Spiderman'"(click)="changeHeroName()"class="btn btn-primary mx-2"> <!-- mx = margen en el eje X-->
+                                      <!-- btn = clase que creo para el boton-->
+  Cambiar Nombre
+
+</button>
+
+<button
+*ngIf="age !== 32"
+(click)="changeHeroAge()"
+class="btn btn-primary">
+  Cambiar Edad
+
+</button>
+
+<button (click)="resetForm()"
+class="btn btn-primary mx-2"> Reset </button>
+
+
+
+
+
