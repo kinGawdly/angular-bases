@@ -11,7 +11,7 @@ export class ListComponent {
 
   removeLastHero(): void {
 
-    this.deletedHero = this.heroNames.pop();
+    this.deletedHero = this.heroNames.pop(); // cuando tenga un valor. entonces quiere decir que hay un heroe que borré
   }
 
 

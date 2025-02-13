@@ -13,7 +13,7 @@ import { ListComponent } from './list/list.component';
     ListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule // se importa el CommonModule, por que estamos usando modulos encapsulados, onda en ccada archivo y el appModule lo trae por defecto
   ]
 })
 
